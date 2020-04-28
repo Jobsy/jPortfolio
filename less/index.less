@@ -1,3 +1,62 @@
 body {
   background-color: cyan;
 }
+
+#wrapper {
+  background: darkcyan;
+  margin: 0 5em;
+}
+
+header {
+  background: darkorchid;
+  display: flex;
+  flex-direction: column;
+
+  article {
+    background: darkred;
+    width: 50%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    // flex: 1;
+    align-content: center;
+    justify-content: space-around;
+    padding: 2rem 1rem;
+
+    div {
+      h1 {
+        font-family: Inter;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 2rem;
+        line-height: 2.6rem;
+        margin-top: 50px;
+      }
+
+      p {
+        font-family: Inter;
+        font-style: normal;
+        font-weight: normal;
+        font-size: medium;
+        line-height: 1.4rem;
+        margin-top: -1rem;
+        padding-right: 1.5em;
+        width: 75%;
+      }
+    }
+
+    details {
+      //   margin-top: 150px;
+    }
+  }
+
+  aside {
+    position: absolute;
+    left: 50%;
+    right: 0;
+    margin-right: 3em;
+    figure {
+      margin-top: 80px;
+    }
+  }
+}
