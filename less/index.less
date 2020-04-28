@@ -64,3 +64,69 @@ header {
     }
   }
 }
+
+main {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.3rem;
+  padding: 1rem;
+
+  h2 {
+    font-size: 1.7rem;
+  }
+  section {
+    display: flex;
+    margin-top: 3rem;
+    align-items: flex-start;
+    justify-content: space-between;
+    div {
+      // width: 54%;
+      flex: 2;
+
+      span {
+        display: flex;
+        justify-content: start;
+        flex-wrap: wrap;
+
+        time {
+          flex: 2;
+          p {
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 1.15rem;
+            line-height: 1.3rem;
+            /* color: #777777; */
+            // margin-left: 0;
+          }
+        }
+
+        p {
+          font-family: Inter;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 1.7rem;
+          line-height: 0.1rem;
+          color: #ffffff;
+          // margin-left: 4rem;
+          flex: 6;
+        }
+      }
+      hr {
+        margin-top: -0.2rem;
+        background: #eeeeee;
+        width: 90%;
+        margin-left: 0;
+      }
+    }
+
+    figure {
+      flex: 1;
+
+      video {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
