@@ -1,3 +1,155 @@
 body {
   background-color: cyan;
 }
+#wrapper {
+  background: darkcyan;
+  margin: 0 5em;
+}
+header {
+  background: darkorchid;
+  display: flex;
+  flex-direction: column;
+}
+header article {
+  background: darkred;
+  width: 50%;
+  height: 31.2rem;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-around;
+  padding: 2rem 1rem;
+}
+header article div h1 {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 2.6rem;
+  margin-top: 3.2rem;
+}
+header article div p {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: medium;
+  line-height: 1.4rem;
+  margin-top: -1rem;
+  padding-right: 1.5em;
+  width: 75%;
+}
+header aside {
+  position: absolute;
+  left: 50%;
+  right: 0;
+  margin-right: 3rem;
+}
+header aside figure {
+  margin-top: 5rem;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.3rem;
+  padding: 1rem;
+}
+main h2 {
+  font-size: 1.7rem;
+}
+main section {
+  display: flex;
+  margin-top: 3rem;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+main section div {
+  flex: 2;
+}
+main section div span {
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+}
+main section div span time {
+  flex: 2;
+}
+main section div span time p {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.15rem;
+  line-height: 1.3rem;
+  /* color: #777777; */
+}
+main section div span p {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.7rem;
+  line-height: 0.1rem;
+  color: #ffffff;
+  flex: 6;
+}
+main section div hr {
+  margin-top: -0.2rem;
+  background: #eeeeee;
+  width: 90%;
+  margin-left: 0;
+}
+main section figure {
+  flex: 1;
+}
+main section figure video {
+  width: 100%;
+  height: auto;
+}
+#projects {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+}
+#projects div {
+  background: springgreen;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#projects div div {
+  flex-direction: column;
+  align-items: end;
+  flex: 4;
+  background: blue;
+}
+#projects div div h3 {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 0.1rem;
+  color: #ffffff;
+}
+#projects div div p {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 0.1rem;
+  color: #bcbcbc;
+}
+#projects div nav {
+  display: flex;
+  align-self: baseline;
+  justify-content: space-between;
+  margin-top: 1rem;
+  flex: 1;
+  background: bisque;
+}
+#projects #projImg {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+}
+#projects #projImg img {
+  width: 49%;
+  margin: 0.5rem 0;
+}
