@@ -130,3 +130,74 @@ main {
     }
   }
 }
+
+#projects {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+
+  div {
+    background: springgreen;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    div {
+      flex-direction: column;
+      align-items: end;
+      flex: 4;
+      background: blue;
+
+      h3 {
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1.6rem;
+        line-height: 0.1rem;
+        color: #ffffff;
+      }
+
+      p {
+        font-family: Inter;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1rem;
+        line-height: 0.1rem;
+        color: #bcbcbc;
+      }
+    }
+
+    nav {
+      display: flex;
+      align-self: baseline;
+      justify-content: space-between;
+      margin-top: 1rem;
+      flex: 1;
+      background: bisque;
+    }
+  }
+
+  #projImg {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+
+    img {
+      width: 49%;
+      margin: 0.5rem 0;
+    }
+  }
+}
+
+#employers {
+  background: blueviolet;
+  display: flex;
+  padding: 2rem;
+  justify-content: center;
+
+  img {
+    width: 17%;
+    height: 2rem;
+    margin: 0.2rem;
+  }
+}
