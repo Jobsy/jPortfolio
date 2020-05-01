@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/ /* http://meyerweb.com/eric/tools/css/reset/ /* http://meyerweb.com/eric/tools/css/reset/ /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -451,3 +451,322 @@ html {
 //     color: #cdcdcd;
 //   }
 // }
+
+body {
+  background-color: cyan;
+}
+
+#wrapper {
+  background: darkcyan;
+  margin: 0 5em;
+}
+
+header {
+  background: darkorchid;
+  display: flex;
+  flex-direction: column;
+
+  article {
+    background: darkred;
+    width: 50%;
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-between;
+    padding: 2rem 1rem;
+    margin-top: 5rem;
+    margin-bottom: 1.5rem;
+
+    div {
+      h1 {
+        font-family: Inter;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 2.4rem;
+        line-height: 3.1rem;
+        margin-top: 3.2rem;
+        color: #ffffff;
+      }
+
+      p {
+        font-family: Inter;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.6rem;
+        line-height: 2rem;
+        margin-top: 2rem;
+        padding-right: 1.5rem;
+        width: 75%;
+        color: #f3f3f3;
+      }
+    }
+
+    details {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 1.2rem;
+      line-height: 2rem;
+      color: #d0d0d0;
+    }
+  }
+
+  aside {
+    position: absolute;
+    left: 50%;
+    right: 0;
+    margin-right: 5rem;
+
+    figure {
+      margin-top: 5rem;
+
+      img {
+        width: 100%;
+        height: 50rem;
+      }
+    }
+  }
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.3rem;
+  padding: 1rem;
+
+  h2 {
+    font-size: 1.8rem;
+    color: #ffffff;
+  }
+  section {
+    display: flex;
+    margin-top: 3rem;
+    align-items: flex-start;
+    justify-content: space-between;
+    div {
+      // width: 54%;
+      flex: 2;
+
+      span {
+        display: flex;
+        justify-content: start;
+        flex-wrap: wrap;
+
+        time {
+          flex: 2;
+          p {
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 1.15rem;
+            line-height: 1.3rem;
+            color: #777777;
+            // margin-left: 0;
+          }
+        }
+
+        p {
+          font-family: Inter;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 1.6rem;
+          line-height: 0.1rem;
+          color: #ffffff;
+          // margin-left: 4rem;
+          flex: 6;
+        }
+      }
+      hr {
+        margin-top: -0.2rem;
+        background: #eeeeee;
+        width: 90%;
+        margin-left: 0;
+      }
+    }
+
+    figure {
+      flex: 1;
+
+      video {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
+
+#projects {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+
+  div {
+    background: springgreen;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    div {
+      flex-direction: column;
+      align-items: end;
+      flex: 4;
+      background: blue;
+
+      h3 {
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1.6rem;
+        line-height: 0.1rem;
+        color: #ffffff;
+      }
+
+      p {
+        font-family: Inter;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1rem;
+        line-height: 0.1rem;
+        color: #bcbcbc;
+      }
+    }
+
+    nav {
+      display: flex;
+      align-self: baseline;
+      justify-content: space-between;
+      margin-top: 1rem;
+      flex: 1;
+      background: bisque;
+    }
+  }
+
+  #projImg {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+
+    img {
+      width: 49%;
+      margin: 0.5rem 0;
+    }
+  }
+}
+
+#employers {
+  background: blueviolet;
+  display: flex;
+  padding: 2rem;
+  justify-content: center;
+
+  img {
+    width: 17%;
+    height: 2rem;
+    margin: 0.2rem;
+  }
+}
+
+#contacts {
+  background: aliceblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  margin: 0 auto;
+
+  #contactTile {
+    background: brown;
+    margin-bottom: -1rem;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    text-align: center;
+    color: #aaaaaa;
+  }
+
+  h2 {
+    background: black;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.1rem;
+    line-height: 3rem;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  #contactBody {
+    background: blue;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.95rem;
+    line-height: 1.3rem;
+    text-align: center;
+    color: #ffffff;
+    margin-top: -1.1rem;
+  }
+
+  figure {
+    display: flex;
+    background: blueviolet;
+    align-items: center;
+    margin-top: -1rem;
+    justify-content: center;
+    img {
+      width: 5%;
+      height: 2em;
+      border-radius: 50%;
+      padding: 0.2rem;
+      background: whitesmoke;
+    }
+    figcaption {
+      background: gold;
+      font-family: Inter;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 1.05rem;
+      line-height: 0.1rem;
+      color: #ffffff;
+      h5 {
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1.1rem;
+        line-height: 0.1rem;
+        color: #ffffff;
+      }
+    }
+    p {
+      font-family: Inter;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 0.9rem;
+      line-height: 0.5rem;
+      color: #e2e2e2;
+      margin-top: -1rem;
+    }
+  }
+}
+
+footer {
+  display: flex;
+  background: greenyellow;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  margin: 3rem 0 0 0;
+
+  a {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height, or 119% */
+    margin: 0 0.5rem;
+    color: #cdcdcd;
+  }
+}
