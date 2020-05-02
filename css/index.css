@@ -1,64 +1,263 @@
+/* http://meyerweb.com/eric/tools/css/reset/ /* http://meyerweb.com/eric/tools/css/reset/ /* http://meyerweb.com/eric/tools/css/reset/ /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
 body {
-  background-color: cyan;
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+html {
+  font-size: 62.5%;
+}
+* {
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  font-family: "Elsie", cursive;
+}
+body {
+  background: #0a012f;
 }
 #wrapper {
-  background: darkcyan;
+  background: #0a012f;
   margin: 0 5em;
 }
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #07011e;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  right: 0;
+  padding: 0 5rem;
+  padding: 2rem 5rem;
+  z-index: 999;
+  margin-top: 0;
+}
+nav #container {
+  display: none;
+}
+nav h2 {
+  font-family: Elsie;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 1.6rem;
+  line-height: 28px;
+  color: #ffffff;
+  flex: 9;
+}
+nav div {
+  display: flex;
+  flex: 3;
+  align-items: center;
+  justify-content: space-between;
+}
+nav div a {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.7rem;
+  color: #ffffff;
+}
 header {
-  background: darkorchid;
+  background: #07011e;
   display: flex;
   flex-direction: column;
 }
 header article {
-  background: darkred;
   width: 50%;
-  height: 31.2rem;
+  height: 40rem;
   display: flex;
   flex-direction: column;
   align-content: center;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 2rem 1rem;
+  margin-top: 8rem;
+  margin-bottom: 1.5rem;
 }
 header article div h1 {
   font-family: Inter;
   font-style: normal;
   font-weight: bold;
-  font-size: 2rem;
-  line-height: 2.6rem;
+  font-size: 2.4rem;
+  line-height: 3.1rem;
   margin-top: 3.2rem;
+  color: #ffffff;
 }
 header article div p {
   font-family: Inter;
   font-style: normal;
   font-weight: normal;
-  font-size: medium;
-  line-height: 1.4rem;
-  margin-top: -1rem;
-  padding-right: 1.5em;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  margin-top: 2rem;
+  padding-right: 1.5rem;
   width: 75%;
+  color: #f3f3f3;
+}
+header article details {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  color: #d0d0d0;
 }
 header aside {
   position: absolute;
   left: 50%;
   right: 0;
-  margin-right: 3rem;
+  margin-right: 5rem;
 }
 header aside figure {
-  margin-top: 5rem;
+  margin-top: 8rem;
+}
+header aside figure img {
+  width: 100%;
+  height: 50rem;
 }
 main {
   display: flex;
   flex-direction: column;
-  margin-top: 1.3rem;
-  padding: 1rem;
+  margin-top: 6rem;
+  padding: 1rem 0 1rem 1rem;
 }
 main h2 {
-  font-size: 1.7rem;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 1.7rem;
+  color: #ffffff;
 }
 main section {
   display: flex;
-  margin-top: 3rem;
+  margin-top: 5rem;
   align-items: flex-start;
   justify-content: space-between;
 }
@@ -69,6 +268,7 @@ main section div span {
   display: flex;
   justify-content: start;
   flex-wrap: wrap;
+  margin: 1.2rem 0;
 }
 main section div span time {
   flex: 2;
@@ -79,21 +279,20 @@ main section div span time p {
   font-weight: 600;
   font-size: 1.15rem;
   line-height: 1.3rem;
-  /* color: #777777; */
+  color: #777777;
 }
 main section div span p {
   font-family: Inter;
   font-style: normal;
   font-weight: 600;
-  font-size: 1.7rem;
-  line-height: 0.1rem;
+  font-size: 1.4rem;
+  line-height: 1rem;
   color: #ffffff;
   flex: 6;
 }
 main section div hr {
-  margin-top: -0.2rem;
   background: #eeeeee;
-  width: 90%;
+  width: 75%;
   margin-left: 0;
 }
 main section figure {
@@ -106,10 +305,9 @@ main section figure video {
 #projects {
   display: flex;
   flex-direction: column;
-  margin-top: 3rem;
+  margin-top: 5rem;
 }
 #projects div {
-  background: springgreen;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -118,22 +316,21 @@ main section figure video {
   flex-direction: column;
   align-items: end;
   flex: 4;
-  background: blue;
 }
 #projects div div h3 {
   font-family: Inter;
   font-style: normal;
   font-weight: 600;
   font-size: 1.6rem;
-  line-height: 0.1rem;
+  line-height: 2rem;
   color: #ffffff;
 }
 #projects div div p {
   font-family: Inter;
   font-style: normal;
   font-weight: normal;
-  font-size: 1rem;
-  line-height: 0.1rem;
+  font-size: 0.9rem;
+  line-height: 1.4rem;
   color: #bcbcbc;
 }
 #projects div nav {
@@ -142,14 +339,323 @@ main section figure video {
   justify-content: space-between;
   margin-top: 1rem;
   flex: 1;
-  background: bisque;
+}
+#projects div nav a {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+  color: #aaaaaa;
 }
 #projects #projImg {
   display: flex;
   flex-wrap: wrap;
   margin: 2rem 0;
 }
-#projects #projImg img {
+#projects #projImg a {
   width: 49%;
-  margin: 0.5rem 0;
+}
+#projects #projImg a img {
+  width: 100%;
+  height: 50rem;
+  margin: 0.8rem 0;
+}
+#employers {
+  display: flex;
+  padding: 2rem;
+  justify-content: center;
+  margin: 5rem 0;
+}
+#employers img {
+  width: 15%;
+  height: 4rem;
+  margin: 0 1rem;
+}
+#contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  margin: 0 auto;
+}
+#contacts #contactTile {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.1rem;
+  line-height: 1.3rem;
+  text-align: center;
+  color: #aaaaaa;
+}
+#contacts h2 {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+  text-align: center;
+  color: #ffffff;
+  margin: 1rem 0;
+}
+#contacts #contactBody {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.97rem;
+  line-height: 1.4rem;
+  text-align: center;
+  color: #ffffff;
+}
+#contacts figure {
+  display: flex;
+  align-items: center;
+  margin: 1rem;
+  justify-content: center;
+}
+#contacts figure img {
+  width: 5%;
+  height: 2em;
+  border-radius: 50%;
+  padding: 0.2rem;
+  background: whitesmoke;
+}
+#contacts figure figcaption {
+  font-family: Inter;
+  margin-left: 0.3rem;
+}
+#contacts figure figcaption h5 {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.2rem;
+  color: #ffffff;
+}
+#contacts figure figcaption p {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.7rem;
+  line-height: 1rem;
+  color: #e2e2e2;
+}
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  margin: 5rem 0 0 0;
+}
+footer a {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.1rem;
+  line-height: 1.2rem;
+  margin: 0 0.5rem;
+  color: #cdcdcd;
+}
+@media (max-width: 568px) {
+  body {
+    /* ANIMATION */
+  }
+  body #wrapper {
+    margin: 0 1.45rem;
+  }
+  body nav {
+    padding: 1rem 1.45rem;
+  }
+  body nav #desktopView {
+    display: none;
+  }
+  body nav h2 {
+    font-size: 1.45rem;
+    line-height: 2.1rem;
+    margin: 1rem 0;
+  }
+  body header article {
+    width: 100%;
+    height: auto;
+    order: 2;
+  }
+  body header article div h1 {
+    font-size: 2.8rem;
+    line-height: 4rem;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  body header article div p {
+    font-size: 1.15rem;
+    line-height: 1.8rem;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+  }
+  body header article details {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    text-align: center;
+    margin: 2rem;
+  }
+  body header aside {
+    position: unset;
+    left: 0;
+    right: 0;
+    margin-right: 0;
+    order: 1;
+  }
+  body header aside figure {
+    margin-top: 8rem;
+  }
+  body header aside figure img {
+    width: 100%;
+    height: 35rem;
+  }
+  body main {
+    padding: 0;
+    margin-top: 3rem;
+  }
+  body main h2 {
+    font-size: 2.2rem;
+    line-height: 2rem;
+  }
+  body main section {
+    margin-top: 2rem;
+  }
+  body main section div {
+    width: 100%;
+  }
+  body main section div span {
+    align-items: center;
+  }
+  body main section div span time {
+    flex: none;
+  }
+  body main section div span time p {
+    font-size: 1rem;
+    line-height: 1.2rem;
+    margin-left: 0;
+  }
+  body main section div span p {
+    line-height: 1.7rem;
+    margin-left: 1.1rem;
+  }
+  body main section div hr {
+    width: 100%;
+  }
+  body main section figure {
+    display: none;
+  }
+  body #projects {
+    margin-bottom: 1rem;
+  }
+  body #projects #projImg {
+    margin: 0.5rem 0;
+  }
+  body #projects #projImg a {
+    width: 100%;
+  }
+  body #projects #projImg a img {
+    width: 100%;
+    height: 25rem;
+  }
+  body #employers {
+    flex-wrap: wrap;
+    margin: 0;
+  }
+  body #employers img {
+    width: 20%;
+    margin: 1rem 2rem;
+  }
+  body #contacts {
+    width: 100%;
+    margin: 5rem auto;
+  }
+  body footer {
+    padding: 1rem 0;
+    margin-bottom: 3rem;
+    justify-content: space-between;
+  }
+  body footer a {
+    margin: 0;
+  }
+  body #container {
+    background: #272727;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-right: -35px;
+  }
+  body .menu-btn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 40px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+  }
+  body .menu-btn__burger {
+    flex: none;
+    width: 25px;
+    height: 6px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+    transition: all 0.5s ease-in-out;
+  }
+  body .menu-btn__burger::before,
+  body .menu-btn__burger::after {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 6px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+    transition: all 0.5s ease-in-out;
+  }
+  body .menu-btn__burger::before {
+    transform: translateY(-16px);
+    margin-top: 5px;
+  }
+  body .menu-btn__burger::after {
+    transform: translateY(16px);
+    margin-top: -5px;
+  }
+  body .menu-btn.open .menu-btn__burger {
+    transform: translateX(-50px);
+    background: transparent;
+    box-shadow: none;
+  }
+  body .menu-btn.open .menu-btn__burger::before {
+    transform: rotate(45deg) translate(35px, -35px);
+    margin-top: -5px;
+  }
+  body .menu-btn.open .menu-btn__burger::after {
+    transform: rotate(-45deg) translate(35px, 35px);
+  }
+  body #hLinks {
+    display: none;
+  }
+  body #hLinks.open {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+  }
+}
+@media (min-width: 1400px) {
+  body #wrapper {
+    margin: 0 20rem;
+  }
+  body nav {
+    padding: 0 20rem;
+  }
+  body header aside {
+    margin-right: 20rem;
+  }
 }
