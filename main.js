@@ -12,3 +12,8 @@ menuBtn.addEventListener("click", () => {
     menuOpen = false;
   }
 });
+
+function toggleBtn() {
+  var element = document.body;
+  element.classList.toggle("dark-mode");
+}
