@@ -13,6 +13,10 @@
       href="https://fonts.googleapis.com/css2?family=Elsie:wght@400;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" type="text/css" href="./css/index.css" />
   </head>
   <body>
@@ -22,8 +26,10 @@
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
         <a href="#contacts">contact</a>
-        <button onclick="toggleBtn() ()">Toggle dark mode</button>
+        <!-- <button onclick="toggleBtn() ()">Toggle dark mode</button> -->
         <!-- <button id="toggleBtn">Toggle dark mode</button> -->
+        <!-- <i class="fa fa-toggle-on" style="font-size:24px"></i> -->
+        <i onclick="toggleBtn(this)" class="fa fa-toggle-off"></i>
       </div>
       <div id="container">
         <div class="menu-btn">
@@ -33,8 +39,9 @@
           <a href="#about">About</a>
           <a href="#projects">Projects</a>
           <a href="#contacts">contact</a>
-          <button onclick="toggleBtn() ()">Toggle dark mode</button>
+          <!-- <button onclick="toggleBtn() ()">Toggle dark mode</button> -->
           <!-- <button id="toggleBtn">Toggle dark mode</button> -->
+          <i onclick="toggleBtn(this)" class="fa fa-toggle-off"></i>
         </div>
       </div>
     </nav>
