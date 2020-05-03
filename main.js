@@ -13,7 +13,13 @@ menuBtn.addEventListener("click", () => {
   }
 });
 
-function toggleBtn(x) {
+function toggleBtn1(x) {
+  var element = document.body;
+  element.classList.toggle("dark-mode");
+  x.classList.toggle("fa-toggle-on");
+}
+
+function toggleBtn2(x) {
   var element = document.body;
   element.classList.toggle("dark-mode");
   x.classList.toggle("fa-toggle-on");
