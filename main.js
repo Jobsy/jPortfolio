@@ -13,7 +13,8 @@ menuBtn.addEventListener("click", () => {
   }
 });
 
-function toggleBtn() {
+function toggleBtn(x) {
   var element = document.body;
   element.classList.toggle("dark-mode");
+  x.classList.toggle("fa-toggle-on");
 }
