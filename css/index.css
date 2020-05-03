@@ -169,11 +169,11 @@ nav h2 {
   font-size: 1.6rem;
   line-height: 28px;
   color: #ffffff;
-  flex: 9;
+  flex: 10;
 }
 nav div {
   display: flex;
-  flex: 3;
+  flex: 4;
   align-items: center;
   justify-content: space-between;
 }
@@ -184,6 +184,17 @@ nav div a {
   font-size: 1rem;
   line-height: 1.7rem;
   color: #ffffff;
+}
+nav div .fa {
+  font-size: 24px;
+  cursor: pointer;
+  user-select: none;
+}
+nav div .fa.fa-toggle-off {
+  color: white;
+}
+nav div .fa.fa-toggle-on {
+  color: #0a012f;
 }
 header {
   background: #07011e;
@@ -407,6 +418,10 @@ main section figure video {
   text-align: center;
   color: #ffffff;
 }
+#contacts #contactBody span {
+  color: #877cff;
+  font-size: 1.2rem;
+}
 #contacts figure {
   display: flex;
   align-items: center;
@@ -478,6 +493,7 @@ footer a {
     width: 100%;
     height: auto;
     order: 2;
+    margin-top: 0rem;
   }
   body header article div h1 {
     font-size: 2.8rem;
@@ -581,7 +597,6 @@ footer a {
     margin: 0;
   }
   body #container {
-    background: #272727;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -658,4 +673,64 @@ footer a {
   body header aside {
     margin-right: 20rem;
   }
+}
+.dark-mode {
+  background-color: #ffffff;
+}
+.dark-mode #wrapper {
+  background-color: #ffffff;
+}
+.dark-mode nav {
+  background: #f0eeee;
+}
+.dark-mode nav h2 {
+  color: #000000;
+}
+.dark-mode nav div a {
+  color: #000000;
+}
+.dark-mode header {
+  background: #f0eeee;
+}
+.dark-mode header article div h1 {
+  color: #000000;
+}
+.dark-mode header article div p {
+  color: #777777;
+}
+.dark-mode header article details {
+  color: #777777;
+}
+.dark-mode main h2 {
+  color: #000000;
+}
+.dark-mode main section div span p {
+  color: #777777;
+}
+.dark-mode main section div p {
+  color: #000000;
+}
+.dark-mode #projects div div h3 {
+  color: #000000;
+}
+.dark-mode #contacts #contactTile {
+  color: #aaaaaa;
+}
+.dark-mode #contacts h2 {
+  color: #000000;
+}
+.dark-mode #contacts #contactBody {
+  color: #535353;
+}
+.dark-mode #contacts figure img {
+  color: #aaaaaa;
+}
+.dark-mode #contacts figure figcaption h5 {
+  color: #000000;
+}
+.dark-mode #contacts figure figcaption p {
+  color: #777777;
+}
+.dark-mode footer a {
+  color: #cdcdcd;
 }
