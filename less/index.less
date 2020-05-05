@@ -220,10 +220,25 @@ header {
   display: flex;
   flex-direction: column;
 
+  @media (max-width: 667px) {
+    article {
+      height: 31rem;
+    }
+  }
+  @media (min-width: 731px) {
+    article {
+      height: 37rem;
+    }
+  }
+  @media (min-width: 768px) {
+    article {
+      height: 42rem;
+    }
+  }
   article {
     // background: darkred;
     width: 50%;
-    height: 40rem;
+    // height: 40rem;
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -276,10 +291,12 @@ header {
     figure {
       // margin-top: 5rem;
       margin-top: 8rem;
+      background: white;
 
       img {
         width: 100%;
-        height: 50rem;
+        // height: 50rem;
+        // max-width: 360px;
       }
     }
   }
@@ -617,7 +634,7 @@ body {
 
           img {
             width: 100%;
-            height: 35rem;
+            // height: 35rem;
           }
         }
       }
