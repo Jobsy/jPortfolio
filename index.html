@@ -21,27 +21,47 @@
   </head>
   <body>
     <nav>
-      <h2><a href="#home">Oluwajoba</a></h2>
-      <div id="desktopView">
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contacts">Contact</a>
-        <!-- <button onclick="toggleBtn() ()">Toggle dark mode</button> -->
-        <!-- <button id="toggleBtn">Toggle dark mode</button> -->
-        <!-- <i class="fa fa-toggle-on" style="font-size:24px"></i> -->
-        <i onclick="toggleBtn1(this)" class="fa fa-toggle-off"></i>
-      </div>
-      <div id="container">
-        <div class="menu-btn">
-          <div class="menu-btn__burger"></div>
-        </div>
-        <div id="hLinks">
+      <div class="nav2">
+        <h2><a href="#home">Oluwajoba</a></h2>
+        <div id="desktopView">
           <a href="#about">About</a>
           <a href="#projects">Projects</a>
-          <a href="#contacts">contact</a>
+          <a href="#contacts">Contact</a>
           <!-- <button onclick="toggleBtn() ()">Toggle dark mode</button> -->
           <!-- <button id="toggleBtn">Toggle dark mode</button> -->
-          <i onclick="toggleBtn2(this)" class="fa fa-toggle-off"></i>
+          <!-- <i class="fa fa-toggle-on" style="font-size:24px"></i> -->
+          <i onclick="toggleBtn1(this)" class="fa fa-toggle-off"></i>
+        </div>
+        <div id="container">
+          <div class="menu-btn">
+            <div class="menu-btn__burger"></div>
+          </div>
+          <!-- <div id="hLinks"> -->
+          <!-- <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contacts">contact</a> -->
+          <!-- <button onclick="toggleBtn() ()">Toggle dark mode</button>// -->
+          <!-- <button id="toggleBtn">Toggle dark mode</button>// -->
+          <!-- <i onclick="toggleBtn2(this)" class="fa fa-toggle-off"></i> -->
+          <!-- </div> -->
+        </div>
+      </div>
+      <div id="hLinks">
+        <div class="hLinksContents1">
+          <h2>Menu</h2>
+          <a href="#about" id="menu-anchor1">About</a>
+          <hr />
+          <a href="#projects" id="menu-anchor2">Projects</a>
+          <hr />
+          <a href="#contacts" id="menu-anchor3">Contact</a>
+          <hr />
+        </div>
+        <div class="hLinksContents2">
+          <div class="darkMode">
+            <p>Dark Mode</p>
+            <i onclick="toggleBtn2(this)" class="fa fa-toggle-off"></i>
+          </div>
+          <hr />
         </div>
       </div>
     </nav>
