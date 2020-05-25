@@ -194,6 +194,16 @@ nav {
     align-items: center;
     justify-content: space-between;
 
+    // @media (max-width: 667px) {
+    //   flex: 7;
+    // }
+    @media (max-width: 768px) {
+      flex: 7;
+    }
+    @media (min-width: 769px) {
+      flex: 6;
+    }
+
     a {
       font-family: Inter;
       font-style: normal;
@@ -878,7 +888,8 @@ body {
         margin-left: 19rem;
       }
       aside {
-        margin-left: 20rem;
+        // margin-left: 20rem;
+        margin-right: 20rem;
       }
       h2 {
         padding-left: 20rem;
