@@ -159,17 +159,22 @@ nav {
   z-index: 999;
   margin-top: 0;
 }
-nav #container {
+nav #container,
+nav #hLinks {
   display: none;
 }
-nav h2 {
-  font-family: Elsie;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 1.6rem;
+nav .nav2 h2 {
+  font-size: 2.2rem;
   line-height: 28px;
   color: #ffffff;
   flex: 10;
+}
+nav .nav2 h2 a {
+  font-family: Elsie;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 2.1rem;
 }
 nav div {
   display: flex;
@@ -177,11 +182,21 @@ nav div {
   align-items: center;
   justify-content: space-between;
 }
+@media (max-width: 768px) {
+  nav div {
+    flex: 7;
+  }
+}
+@media (min-width: 769px) {
+  nav div {
+    flex: 6;
+  }
+}
 nav div a {
   font-family: Inter;
   font-style: normal;
   font-weight: 500;
-  font-size: 1rem;
+  font-size: 1.6rem;
   line-height: 1.7rem;
   color: #ffffff;
 }
@@ -198,12 +213,33 @@ nav div .fa.fa-toggle-on {
 }
 header {
   background: #07011e;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 50px;
+}
+@media (max-width: 600px) {
+  header {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  header .desktopView {
+    display: none;
+  }
+  header article {
+    height: 31rem;
+  }
+}
+@media (min-width: 731px) {
+  header article {
+    height: 37rem;
+  }
+}
+@media (min-width: 768px) {
+  header article {
+    height: 42rem;
+  }
 }
 header article {
-  width: 50%;
-  height: 40rem;
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -226,38 +262,71 @@ header article div p {
   font-family: Inter;
   font-style: normal;
   font-weight: normal;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   line-height: 2rem;
   margin-top: 2rem;
   padding-right: 1.5rem;
   width: 75%;
   color: #f3f3f3;
 }
-header article details {
+header article #details {
   font-style: normal;
   font-weight: 600;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   line-height: 2rem;
   color: #d0d0d0;
+  background: #4839ec;
+  border-radius: 2px;
+  width: 15rem;
+  height: 4rem;
 }
 header aside {
-  position: absolute;
-  left: 50%;
-  right: 0;
   margin-right: 5rem;
+  grid-column: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  z-index: 0;
+}
+@media (max-width: 600px) {
+  header aside {
+    grid-column: unset;
+  }
 }
 header aside figure {
   margin-top: 8rem;
+  background-image: url("file:///home/jobsy/Desktop/jPortfolio/imgage/oluwajoba/oluwajoba.png");
+  height: 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 header aside figure img {
   width: 100%;
-  height: 50rem;
+}
+header h2 {
+  background-color: #0a012f;
+  grid-column: 1 / span 3;
+  grid-row: 2;
+  padding-left: 5rem;
+  align-items: flex-end;
+  display: flex;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 1.7rem;
+  color: #ffffff;
 }
 main {
   display: flex;
   flex-direction: column;
-  margin-top: 6rem;
-  padding: 1rem 0 1rem 1rem;
+}
+main .mobileView {
+  display: none;
+}
+@media (max-width: 600px) {
+  main .mobileView {
+    display: block;
+  }
 }
 main h2 {
   font-family: Inter;
@@ -396,7 +465,7 @@ main section figure video {
   font-family: Inter;
   font-style: normal;
   font-weight: 600;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   line-height: 1.3rem;
   text-align: center;
   color: #aaaaaa;
@@ -415,7 +484,7 @@ main section figure video {
   font-family: Inter;
   font-style: normal;
   font-weight: normal;
-  font-size: 0.97rem;
+  font-size: 1.1rem;
   line-height: 1.4rem;
   text-align: center;
   color: #ffffff;
@@ -468,7 +537,7 @@ footer a {
   font-family: Inter;
   font-style: normal;
   font-weight: 600;
-  font-size: 1.1rem;
+  font-size: 1.6rem;
   line-height: 1.2rem;
   margin: 0 0.5rem;
   color: #cdcdcd;
@@ -482,12 +551,19 @@ footer a {
   }
   body nav {
     padding: 1rem 1.45rem;
+    flex-direction: column;
   }
   body nav #desktopView {
     display: none;
   }
-  body nav h2 {
-    font-size: 1.45rem;
+  body nav .nav2 {
+    width: 90%;
+  }
+  body nav .nav2 h2 a {
+    font-family: Elsie;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 2rem;
     line-height: 2.1rem;
     margin: 1rem 0;
   }
@@ -495,6 +571,7 @@ footer a {
     width: 100%;
     height: auto;
     order: 2;
+    align-items: center;
     margin: 0 auto;
   }
   body header article div h1 {
@@ -510,11 +587,11 @@ footer a {
     width: 80%;
     margin: 0 auto;
   }
-  body header article details {
+  body header article #details {
     font-size: 1.2rem;
     line-height: 1.5rem;
     text-align: center;
-    margin: 2rem;
+    margin: 6rem 2rem 2rem 0;
   }
   body header aside {
     position: unset;
@@ -528,7 +605,6 @@ footer a {
   }
   body header aside figure img {
     width: 100%;
-    height: 35rem;
   }
   body main {
     padding: 0;
@@ -599,8 +675,8 @@ footer a {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 10px;
-    margin-right: -35px;
+    margin-top: 1rem;
+    margin-right: -7rem;
   }
   body .menu-btn {
     position: relative;
@@ -659,6 +735,47 @@ footer a {
     display: flex;
     flex-direction: column;
     margin-top: 10px;
+    height: -webkit-fill-available;
+    background-color: rgba(193, 193, 197, 0.3);
+    width: 100%;
+  }
+  body .hLinksContents1 {
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 90%;
+  }
+  body .hLinksContents1 h2 {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.7rem;
+    color: #ffffff;
+    flex: 0;
+  }
+  body .hLinksContents1 hr {
+    background: #ffffff;
+    width: 100%;
+    margin-top: -2rem;
+  }
+  body .hLinksContents2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+  body .hLinksContents2 .darkMode {
+    width: 90%;
+  }
+  body .hLinksContents2 .darkMode p {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14.1053px;
+    line-height: 17px;
+    /* or 121% */
+    color: #ffffff;
   }
 }
 @media (min-width: 1400px) {
@@ -674,6 +791,9 @@ footer a {
   body header aside {
     margin-right: 20rem;
   }
+  body header h2 {
+    padding-left: 20rem;
+  }
 }
 .dark-mode {
   background-color: #ffffff;
@@ -683,6 +803,9 @@ footer a {
 }
 .dark-mode nav {
   background: #f0eeee;
+}
+.dark-mode nav .hLinksContents2 .darkMode p {
+  color: #000000;
 }
 .dark-mode nav h2 {
   color: #000000;
@@ -700,6 +823,10 @@ footer a {
   color: #777777;
 }
 .dark-mode header article details {
+  color: #777777;
+}
+.dark-mode header h2 {
+  background-color: #ffffff;
   color: #777777;
 }
 .dark-mode main h2 {
