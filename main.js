@@ -4,6 +4,7 @@ const menuAnchor1 = document.getElementById("menu-anchor1");
 const menuAnchor2 = document.getElementById("menu-anchor2");
 const menuAnchor3 = document.getElementById("menu-anchor3");
 let menuOpen = false;
+
 menuBtn.addEventListener("click", () => {
   if (!menuOpen) {
     menuBtn.classList.add("open");
@@ -21,11 +22,13 @@ menuAnchor1.addEventListener("click", () => {
   hLinks.classList.remove("open");
   menuOpen = false;
 });
+
 menuAnchor2.addEventListener("click", () => {
   menuBtn.classList.remove("open");
   hLinks.classList.remove("open");
   menuOpen = false;
 });
+
 menuAnchor3.addEventListener("click", () => {
   menuBtn.classList.remove("open");
   hLinks.classList.remove("open");
