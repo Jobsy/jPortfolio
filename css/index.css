@@ -139,17 +139,17 @@ html {
   font-family: "Elsie", cursive;
 }
 body {
-  background: #0a012f;
+  background: #ffffff;
 }
 #wrapper {
-  background: #0a012f;
+  background: #ffffff;
   margin: 0 5em;
 }
 nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #07011e;
+  background: #f0eeee;
   position: fixed;
   width: 100%;
   left: 0;
@@ -166,12 +166,12 @@ nav #hLinks {
 nav .nav2 h2 {
   font-size: 2.2rem;
   line-height: 28px;
-  color: #ffffff;
+  color: #000000;
   flex: 10;
 }
 nav .nav2 h2 a {
   font-family: Elsie;
-  color: #ffffff;
+  color: #000000;
   font-style: normal;
   font-weight: 900;
   font-size: 2.3rem;
@@ -198,7 +198,7 @@ nav div a {
   font-weight: 500;
   font-size: 1.6rem;
   line-height: 1.7rem;
-  color: #ffffff;
+  color: #000000;
 }
 nav div .fa {
   font-size: 24px;
@@ -206,13 +206,13 @@ nav div .fa {
   user-select: none;
 }
 nav div .fa.fa-toggle-off {
-  color: white;
-}
-nav div .fa.fa-toggle-on {
   color: #0a012f;
 }
+nav div .fa.fa-toggle-on {
+  color: #ffffff;
+}
 header {
-  background: #07011e;
+  background: #f0eeee;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto 50px;
@@ -256,7 +256,7 @@ header article div h1 {
   font-size: 2.4rem;
   line-height: 3.1rem;
   margin-top: 3.2rem;
-  color: #ffffff;
+  color: #000000;
 }
 header article div p {
   font-family: Inter;
@@ -267,7 +267,7 @@ header article div p {
   margin-top: 2rem;
   padding-right: 1.5rem;
   width: 75%;
-  color: #f3f3f3;
+  color: #777777;
 }
 header article #details {
   font-family: Inter;
@@ -305,7 +305,6 @@ header aside figure img {
   width: 100%;
 }
 header h2 {
-  background-color: #0a012f;
   grid-column: 1 / span 3;
   grid-row: 2;
   padding-left: 5rem;
@@ -316,7 +315,8 @@ header h2 {
   font-weight: 600;
   font-size: 2rem;
   line-height: 1.7rem;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #777777;
 }
 main {
   display: flex;
@@ -336,7 +336,7 @@ main h2 {
   font-weight: 600;
   font-size: 2rem;
   line-height: 1.7rem;
-  color: #ffffff;
+  color: #000000;
 }
 main section {
   display: flex;
@@ -370,7 +370,7 @@ main section div span p {
   font-weight: 600;
   font-size: 1.4rem;
   line-height: 1rem;
-  color: #ffffff;
+  color: #777777;
   flex: 6;
 }
 main section div hr {
@@ -406,7 +406,7 @@ main section figure video {
   font-weight: 600;
   font-size: 1.6rem;
   line-height: 2rem;
-  color: #ffffff;
+  color: #000000;
 }
 #projects div div p {
   font-family: Inter;
@@ -479,7 +479,7 @@ main section figure video {
   font-size: 2.4rem;
   line-height: 2.8rem;
   text-align: center;
-  color: #ffffff;
+  color: #000000;
   margin: 1rem 0;
 }
 #contacts #contactBody {
@@ -489,7 +489,7 @@ main section figure video {
   font-size: 1.1rem;
   line-height: 1.4rem;
   text-align: center;
-  color: #ffffff;
+  color: #535353;
 }
 #contacts #contactBody span {
   color: #877cff;
@@ -506,7 +506,7 @@ main section figure video {
   height: 2em;
   border-radius: 50%;
   padding: 0.2rem;
-  background: whitesmoke;
+  color: #aaaaaa;
 }
 #contacts figure figcaption {
   font-family: Inter;
@@ -518,7 +518,7 @@ main section figure video {
   font-weight: 600;
   font-size: 1rem;
   line-height: 1.2rem;
-  color: #ffffff;
+  color: #000000;
 }
 #contacts figure figcaption p {
   font-family: Inter;
@@ -526,7 +526,7 @@ main section figure video {
   font-weight: normal;
   font-size: 0.7rem;
   line-height: 1rem;
-  color: #e2e2e2;
+  color: #777777;
 }
 footer {
   display: flex;
@@ -735,7 +735,7 @@ footer a {
     display: flex;
     flex-direction: column;
     margin-top: 10px;
-    height: -webkit-fill-available;
+    height: 100vh;
     background-color: rgba(193, 193, 197, 0.3);
     width: 100%;
   }
@@ -751,7 +751,7 @@ footer a {
     font-style: normal;
     font-weight: 600;
     font-size: 1.7rem;
-    color: #ffffff;
+    color: #000000;
     flex: 0;
   }
   body .hLinksContents1 hr {
@@ -775,7 +775,7 @@ footer a {
     font-size: 14.1053px;
     line-height: 17px;
     /* or 121% */
-    color: #ffffff;
+    color: #000000;
   }
 }
 @media (min-width: 1400px) {
@@ -797,67 +797,72 @@ footer a {
 }
 .dark-mode {
   background-color: #ffffff;
+  background: #0a012f;
 }
 .dark-mode #wrapper {
   background-color: #ffffff;
+  background: #0a012f;
 }
 .dark-mode nav {
-  background: #f0eeee;
+  background: #07011e;
 }
 .dark-mode nav .hLinksContents2 .darkMode p {
-  color: #000000;
+  color: #ffffff;
 }
 .dark-mode nav h2 {
-  color: #000000;
+  color: #ffffff;
 }
 .dark-mode nav div a {
-  color: #000000;
+  color: #ffffff;
 }
 .dark-mode header {
-  background: #f0eeee;
+  background: #07011e;
 }
 .dark-mode header article div h1 {
-  color: #000000;
+  color: #ffffff;
 }
 .dark-mode header article div p {
-  color: #777777;
+  color: #f3f3f3;
 }
 .dark-mode header article details {
   color: #777777;
 }
 .dark-mode header h2 {
-  background-color: #ffffff;
-  color: #777777;
+  background-color: #0a012f;
+  color: #ffffff;
 }
 .dark-mode main h2 {
-  color: #000000;
+  color: #ffffff;
 }
 .dark-mode main section div span p {
-  color: #777777;
+  color: #ffffff;
 }
 .dark-mode main section div p {
-  color: #000000;
+  color: #ffffff;
+}
+.dark-mode main section figure figcaption {
+  color: #ffffff;
 }
 .dark-mode #projects div div h3 {
-  color: #000000;
+  color: #ffffff;
 }
 .dark-mode #contacts #contactTile {
   color: #aaaaaa;
 }
 .dark-mode #contacts h2 {
-  color: #000000;
+  color: #ffffff;
 }
 .dark-mode #contacts #contactBody {
-  color: #535353;
+  color: #ffffff;
 }
 .dark-mode #contacts figure img {
-  color: #aaaaaa;
+  background: whitesmoke;
 }
 .dark-mode #contacts figure figcaption h5 {
-  color: #000000;
+  color: #ffffff;
 }
 .dark-mode #contacts figure figcaption p {
-  color: #777777;
+  color: #e2e2e2;
 }
 .dark-mode footer a {
   color: #cdcdcd;
